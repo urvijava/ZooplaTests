@@ -30,6 +30,7 @@ public class FrogglePartyTest {
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.froggleparties.com/");
         driver.findElement(By.id("menu-item-2321")).click();
+        driver.findElement(By.id("uk_site")).click();
         driver.findElement(By.xpath("//a[@href='https://www.froggleparties.com/parties/entertainers-magicians']")).click();
         String bigTitle = driver.findElement(By.xpath("//div[@data-id='de24b5e']")).getText();
         String expectedTitle = "Children's party entertainers and magicians";
